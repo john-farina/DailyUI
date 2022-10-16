@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <form class="mainForm" action="">
+        <div class="logo">
+          <img
+            src="./ticket.svg"
+            class="ticketLogo"
+            alt="A outline of a ticket"
+          />
+        </div>
+        <div class="firstLastContainer">
+          <div class="inputContainer">
+            <label for="lastName">First:</label>
+            <input
+              type="text"
+              class="inputBoxes firstLast"
+              name="firstName"
+              id="firstName"
+              placeholder="John"
+            />
+          </div>
+          <div class="inputContainer">
+            <label for="lastName">Last:</label>
+            <input
+              type="text"
+              class="inputBoxes firstLast"
+              name="lastName"
+              id="lastName"
+              placeholder="Farina"
+            />
+          </div>
+        </div>
+        <div class="inputContainer">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="inputBoxes"
+            placeholder="swag@gmail.com"
+          />
+        </div>
+        <div class="inputContainer">
+          <label for="phone">Phone Number:</label>
+          <input
+            type="tel"
+            class="inputBoxes"
+            name="phone"
+            id="phone"
+            placeholder="555-555-5555"
+          />
+        </div>
+        <div class="inputContainer">
+          <label for="birthday">Date of birth:</label>
+          <input type="date" class="inputBoxes" name="birthday" id="birthday" />
+        </div>
+        <button class="formButton">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

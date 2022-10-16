@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+body {
+  margin: 0;
+  background-color: rgb(239, 239, 226);
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 30px;
+}
+
+.mainForm {
+  z-index: 3;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
+  gap: 10px;
+  margin-top: 20px;
+  width: 350px;
+  height: 450px;
+  background-color: rgb(42, 42, 42);
+  border-radius: 4px;
+  box-shadow: 7px 7px 7px rgb(0, 0, 0, 30%);
+}
+.logo {
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  margin-top: -40px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(
+    101deg,
+    rgba(195, 55, 100, 1) 0%,
+    rgba(29, 38, 113, 1) 90%
+  );
+  box-shadow: 0px 3px 7px rgb(0, 0, 0, 30%);
+}
+
+.ticketLogo {
+  width: 61%;
+  filter: invert(85%);
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  /* background-color: blue; */
+}
+label {
+  color: white;
+}
+.inputBoxes {
+  /* position: absolute; */
+  max-height: 23px;
+  min-height: 23px;
+  width: 275px;
+  height: 23px;
+  border-radius: 7px;
+  border: solid 2px rgb(47, 32, 120);
+  font-family: "Open Sans", sans-serif;
+  padding: 2px;
+}
+.inputBoxes:focus {
+  /* background-color: gray; */
+  border: solid 2px rgb(211, 76, 119);
+  outline: none;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.firstLastContainer {
+  margin-top: 70px;
+  display: flex;
+  gap: 10px;
+  /* height: 300px; */
+}
+.firstLast {
+  width: 130px;
+}
+
+.formButton {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+
+  width: 200px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(
+    101deg,
+    rgba(195, 55, 100, 1) 0%,
+    rgba(29, 38, 113, 1) 90%
+  );
+  color: rgb(232, 232, 232);
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: margin-bottom 0.3s, box-shadow 0.3s, width 0.3s, height 0.3s,
+    font-size 0.3s;
+  margin-bottom: 40px;
+}
+.formButton:hover {
+  box-shadow: 0px 7px 8px rgb(0, 0, 0, 10%);
+  margin-bottom: 43px;
+  font-size: 1.11rem;
+  width: 204px;
+  height: 41px;
+}
