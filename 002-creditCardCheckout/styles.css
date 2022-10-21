@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  background-color: rgb(63, 46, 82);
+}
+
+.formContainer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(226, 226, 226);
+  border-radius: 5px;
+  width: 350px;
+  height: 400px;
+}
+
+.formHeader {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 23px;
+  background-color: rgb(207, 207, 207);
+  font-size: 1.2rem;
+  height: 60px;
+}
+
+.cardForm {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  height: 100%;
+  /* background-color: blue; */
+}
+
+.defaultInput {
+  width: 88%;
+  height: 40px;
+  font-size: 1rem;
+}
+
+.monthYearContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  /* background-color: red; */
+  width: 90%;
+  height: 40px;
+}
+
+.defaultSelect {
+  width: 49%;
+  height: 100%;
+}
+
+.ccvContainer {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 90%;
+  gap: 10px;
+  /* background-color: red; */
+}
+
+.ccvInput {
+  width: 40%;
+}
+
+.textBox {
+  width: 43%;
+  text-align: left;
+  /* background-color: green; */
+}
+
+.ccvText {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.payButton {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: rgb(240, 240, 240);
+  width: 90%;
+  height: 35px;
+  background-color: rgb(91, 208, 91);
+  border-radius: 5px;
+  border: 2px solid rgb(88, 186, 88);
+}
+
+.payButton:hover {
+  background-color: rgb(77, 177, 77);
+  border: 2px solid rgb(74, 157, 74);
+  color: rgb(194, 194, 194);
+}
+
+.paypal {
+  background-color: rgb(46, 102, 222);
+  border: 2px solid rgb(53, 94, 183);
+}
+.paypal:hover {
+  background-color: rgb(38, 85, 187);
+  border: 2px solid rgb(41, 74, 144);
+}
+.fa-paypal {
+  font-size: 1.5rem;
+}

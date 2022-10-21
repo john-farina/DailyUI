@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>CreditCard Form</title>
+    <script
+      src="https://kit.fontawesome.com/4c3322bec2.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="formContainer">
-      <h3>Credit Card Details:</h3>
+      <div class="formHeader">
+        <h3>Credit Card Form:</h3>
+      </div>
 
       <form class="cardForm">
         <input
@@ -22,6 +28,7 @@
           maxlength="19"
           placeholder="xxxx xxxx xxxx xxxx"
         />
+
         <div class="monthYearContainer">
           <select class="defaultSelect" name="month" id="month">
             <option value="01">01</option>
@@ -53,14 +60,26 @@
           </select>
         </div>
 
-        <input
-          class="defaultInput"
-          class=""
-          type="password"
-          inputmode="numeric"
-          maxlength="4"
-          placeholder="CCV"
-        />
+        <div class="ccvContainer">
+          <input
+            class="defaultInput ccvInput"
+            class=""
+            type="password"
+            inputmode="numeric"
+            maxlength="4"
+            placeholder="CCV"
+          />
+
+          <div class="textBox">
+            <p class="ccvText">*CCV's are typically 3-4 numbers in length</p>
+          </div>
+        </div>
+
+        <button type="submit" class="payButton">Pay Now</button>
+
+        <button class="payButton paypal">
+          Pay With <i class="fa-brands fa-paypal"></i>
+        </button>
       </form>
     </div>
   </body>
